@@ -3,6 +3,5 @@ class Solution:
         rem = [ ]
         for i in nums:
             rem.append(int(str(i)[::-1]))
-        print(rem)
         return len(set(nums+rem))
         
