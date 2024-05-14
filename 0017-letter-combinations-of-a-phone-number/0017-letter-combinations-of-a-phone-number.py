@@ -12,18 +12,18 @@ class Solution:
         if len(digits)==2:
             for i in s[0]:
                 for j in s[1]:
-                    res.append(str(i+j))
+                    res.append(i+j)
         if len(digits)==3:
             for i in s[0]:
                 for j in s[1]:
                     for k in s[2]:
-                        res.append(str(i+j+k))
+                        res.append(i+j+k)
         if len(digits)==4:
             for i in s[0]:
                 for j in s[1]:
                     for k in s[2]:
                         for l in s[3]:
-                            res.append(str(i+j+k+l))
+                            res.append(i+j+k+l)
         return res
 
         
