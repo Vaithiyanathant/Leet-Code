@@ -1,6 +1,6 @@
 class Solution:
     def minLength(self, s: str) -> int:
-        stack  = [" "]
+        stack  = [' ']
         for i in s[::-1]:
             if i+stack[-1]=="CD"or i+stack[-1]=="AB":
                 stack.pop()
