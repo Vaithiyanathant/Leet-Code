@@ -1,12 +1,12 @@
 class Solution:
     def findGCD(self, nums: List[int]) -> int:
-        def gcd(a,b):
-            if a  < b :
-                return gcd(b,a)
+        def gcd(a, b):
             if b == 0:
                 return a
-            return gcd(b,a%b)
-        ma = max(nums)
-        mi = min(nums)
-        return gcd(ma,mi)
+            else:
+                return gcd(b, a % b)
         
+        # Calculate the maximum and minimum values in the list
+        maxi = max(nums)
+        mini = min(nums)
+        return gcd(maxi,mini)
