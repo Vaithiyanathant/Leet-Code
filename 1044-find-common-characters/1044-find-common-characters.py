@@ -11,7 +11,7 @@ class Solution:
         print(lst)
         ans =  ""
         for k in range(len(lst)):
-            if lst[k]!=[0,0,0]:
+            if lst[k]!=[0]*len(words):
                 l = min(lst[k])
                 ans+=(chr(k+97))*l
         print(ans)
