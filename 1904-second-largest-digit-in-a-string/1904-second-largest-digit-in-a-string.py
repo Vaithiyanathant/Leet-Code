@@ -1,14 +1,15 @@
 class Solution:
     def secondHighest(self, s: str) -> int:
-        lst =[]
-        for i in s:
-            if i.isdigit():
-                lst.append(int(i))
-        lst = sorted(set(lst))[::-1]
-        print(lst)
-        if len(lst)==1 or lst==[]:
-            return -1
-        else:
-            return lst[1]
+        ma = -1
+        scma = -1
+        for i in range(len(s)):
+            if s[i].isdigit():
+                a = int(s[i])
+                if a > ma:
+                    scma = ma
+                    ma = a
+                elif a > scma and a != ma:
+                    scma = a
+                    
+        return scma
 
-        
