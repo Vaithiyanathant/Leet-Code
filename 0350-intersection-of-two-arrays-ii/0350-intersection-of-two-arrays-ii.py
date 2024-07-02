@@ -10,7 +10,7 @@ class Solution:
                 ptr1+=1
             elif nums1[ptr1]>nums2[ptr2]:
                 ptr2+=1
-            else:
+            elif nums1[ptr1]==nums2[ptr2]:
                 res.append(nums1[ptr1])
                 ptr1+=1
                 ptr2+=1
